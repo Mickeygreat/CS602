@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import pydeck as pdk
-import plotly_express as px  # iteractive plot
+import plotly.express as px  # iteractive plot
 # from geopy import geocoders
 # import geopy.geocoders as geocoders
 from geopy.geocoders import Nominatim
