@@ -56,8 +56,11 @@ def interactive_plot(dataframe):
     # selection box
     x_axis_val = st.selectbox("Select X-Axis Value", options=dataframe.columns)
     y_axis_val = st.selectbox("Select Y-Axis Value", options=dataframe.columns)
+    # color picker
+    col = st.color_picker("Select color for the graph")
     # plot
     plot = px.scatter(dataframe, x=x_axis_val, y=y_axis_val)
+    plot.update_traces(marker=dict(color=col))
     st.plotly_chart(plot)
     st.header("")
 
