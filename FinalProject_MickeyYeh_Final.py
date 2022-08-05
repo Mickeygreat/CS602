@@ -70,8 +70,10 @@ def interactive_plot(dataframe):
 upload_file = "bostoncrime2021_7000_sample(1).csv"
 # if upload_file:
 if True:
-    if upload_file.name == "bostoncrime2021_7000_sample(1).csv":
-        dataFileName = upload_file.name
+#     if upload_file.name == "bostoncrime2021_7000_sample(1).csv":
+      if upload_file == "bostoncrime2021_7000_sample(1).csv":
+#         dataFileName = upload_file.name
+        dataFileName = upload_file
         BostonCrimeData = pd.read_csv(dataFileName, skipinitialspace=True)  # skipinitialspace=True to get rid of extra white spaces in data
         # BostonCrimeData = pd.read_csv(dataFileName, skipinitialspace=True, header=None)  # header=None means no header
         df = BostonCrimeData
