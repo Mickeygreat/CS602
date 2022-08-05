@@ -68,7 +68,8 @@ def interactive_plot(dataframe):
 # upload_file = st.file_uploader("Upload Your File Here(one only)", accept_multiple_files=False, key='test')  # one file ata time!
 # wrap and see if file has been uploaded
 upload_file = "bostoncrime2021_7000_sample(1).csv"
-if upload_file:
+# if upload_file:
+if True:
     if upload_file.name == "bostoncrime2021_7000_sample(1).csv":
         dataFileName = upload_file.name
         BostonCrimeData = pd.read_csv(dataFileName, skipinitialspace=True)  # skipinitialspace=True to get rid of extra white spaces in data
