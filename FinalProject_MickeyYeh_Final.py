@@ -127,7 +127,8 @@ if True:
         df_clean_sorted = df.sort_index(inplace=False)
 
     # Title/Heading
-    web_title_text(upload_file.name, "You can start visualizing your data")
+#     web_title_text(upload_file.name, "You can start visualizing your data")
+    web_title_text(upload_file, "You can start visualizing your data")
 
     # Data Statistics
     data_header, data_description = header_description("Data Statistics", "Quick view of your dataset.")
