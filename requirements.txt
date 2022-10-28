@@ -1,4 +1,0 @@
-pydeck
-plotly-express
-nominatim
-geopy
