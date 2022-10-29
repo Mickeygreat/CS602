@@ -7,6 +7,7 @@ import plotly.express as px  # iteractive plot
 from geopy.geocoders import Nominatim
 
 
+# using dictionary here would be faster!!
 def boston_district(dataFile):
     if "A1" == dataFile:
         return "Downtown & Charlestown"
@@ -50,7 +51,7 @@ def header_description(header="None", description=""):
 
 def interactive_plot(dataframe):
     # simple scatter plot
-    scatterplot_header, scatterplot_description = header_description("Data Scatter Plot", "Select X and Y axis.")
+    scatterplot_header, scatterplot_description = header_description("Scatter Plot", "Select X and Y axis.")
     st.header(scatterplot_header)
     st.write(scatterplot_description)
     # selection box
